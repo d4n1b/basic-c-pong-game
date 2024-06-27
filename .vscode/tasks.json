@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "Build Pong Game",
+      "command": "/usr/bin/gcc",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "${workspaceFolder}/src/main.c",
+        "-o",
+        "${workspaceFolder}/src/main.bin",
+        "-I/opt/homebrew/opt/sdl2/include",
+        "-D_THREAD_SAFE",
+        "-L/usr/local/lib",
+        "-L/opt/homebrew/lib",
+        "-lSDL2"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "detail": "compiler: /usr/bin/gcc"
+    }
+  ]
+}

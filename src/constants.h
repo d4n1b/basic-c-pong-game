@@ -1,0 +1,17 @@
+#define WINDOW_WIDTH 640
+#define WINDOW_HEIGHT 480
+#define WINDOW_PADDING 10
+
+#define BALL_WIDTH WINDOW_WIDTH * 0.025
+#define BALL_HEIGHT WINDOW_WIDTH * 0.025
+
+#define PADDLE_WIDTH WINDOW_WIDTH * 0.1
+#define PADDLE_HEIGHT WINDOW_WIDTH * 0.025
+
+#define SPEED_INITIAL 200
+#define SPEED_INCREASE_FACTOR 1.01
+
+#define FPS 60
+#define FRAME_TIME (1000 / FPS)
+
+#define RANDOM(min, max) (min + rand() % (max - min + 1))

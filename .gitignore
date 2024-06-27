@@ -1,0 +1,10 @@
+# System
+.DS_Store
+
+# C/C++
+build
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.bin
